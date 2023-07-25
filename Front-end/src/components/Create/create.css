@@ -1,0 +1,57 @@
+.center-div {
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 0 10%;
+  min-width: 100px;
+}
+.inputField {
+  margin: 1% 0;
+  min-width: 100px;
+}
+
+.Create input {
+  width: 100%;
+  height: 45px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px rgba(0, 0, 0, 0.1) solid;
+  outline: none !important;
+  transition: border 0.3s ease-in-out;
+
+  &:focus {
+    border-color: var(--primary-color);
+  }
+}
+
+.Create button {
+  position: relative;
+  width: fit-content;
+  margin: 1.5rem 0;
+  border: 0;
+  outline: none !important;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: white;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+  }
+
+  &:hover::after {
+    background: rgba(0, 0, 0, 0.08);
+  }
+}
+
+textarea{
+  width: 100%;
+  height: 10rem;
+}

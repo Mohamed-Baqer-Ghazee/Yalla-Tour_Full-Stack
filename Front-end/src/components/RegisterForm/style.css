@@ -1,0 +1,53 @@
+.register-form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 2;
+}
+
+.register-form h5 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.register-form input {
+  border-radius: 5px;
+  outline: 0 !important;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+}
+
+.register-form label {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.register-form .name-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.register-form .name-inputs .inputs,
+.register-form .email-input,
+.register-form .password-input,
+.register-form .phone-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form button {
+  width: 50%;
+  /* margin-inline: auto; */
+  padding: 1rem 0;
+  color: white;
+  background: var(--primary-color);
+  outline: 0 !important;
+  border: 0;
+  border-radius: 50px;
+  margin-top: 1rem;
+}

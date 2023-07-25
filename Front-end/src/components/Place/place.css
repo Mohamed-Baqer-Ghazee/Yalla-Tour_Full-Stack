@@ -1,0 +1,104 @@
+.place {
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.place .img-container {
+  width: 100%;
+  height: 500px;
+}
+
+.place .row-1 .img-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.place .row-1 h1,
+.place .row-2 h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.place .row-1 h3,
+.place .row-2 h3 {
+  font-size: 1dvw;
+}
+
+.place .text-side {
+  padding-top: 2rem;
+}
+
+.place .row-2 .img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.place .carousel-item {
+  width: 100%;
+  height: 500px;
+}
+
+.place .carousel-inner {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.place .carousel-item img {
+  object-fit: cover;
+  width: 90%;
+  height: 100%;
+}
+
+.place .text-side h1 {
+  font-size: 3dvw;
+  font-weight: 900;
+}
+
+@media (max-width: 991px) {
+  .place .row:nth-child(1) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .place {
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .place .text-side {
+    padding-bottom: 2rem;
+  }
+
+  .place .carousel-inner {
+    height: 50dvw;
+  }
+
+  .place .row-1 h1,
+  .place .row-2 h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .place .row-1 h3,
+  .place .row-2 h3 {
+    font-size: 1rem;
+  }
+}
+/* 
+@media (max-width: 500px) {
+  .place .row-1 h1,
+  .place .row-2 h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .place .row-1 h3,
+  .place .row-2 h3 {
+    font-size: 1rem;
+  }
+} */

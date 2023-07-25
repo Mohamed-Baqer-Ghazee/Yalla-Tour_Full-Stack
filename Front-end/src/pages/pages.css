@@ -1,0 +1,35 @@
+.home {
+  padding: 0 5dvw;
+}
+
+.home hr {
+  border-top: solid 3px;
+  opacity: 0.5;
+}
+
+.places {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 2dvw;
+  justify-content: center;
+}
+
+.login,
+.register {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+@media (max-width: 500px) {
+  .home {
+    padding: 0;
+  }
+
+  hr {
+    display: none;
+  }
+}

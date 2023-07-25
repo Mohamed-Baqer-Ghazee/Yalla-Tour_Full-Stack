@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #14977f;
+  --secondary-color: #fdc727;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+#root {
+  height: 100dvh;
+  background-color: #f5f2eb !important;
+}
