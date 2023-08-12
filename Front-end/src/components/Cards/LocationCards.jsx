@@ -15,7 +15,7 @@ function ResCards(props) {
   } = props;
 
   return (
-  <a href={"/place/"+id}>
+  <a href={"/place/"+id} className="place-card-link">
   <div className="card-container">
     <div className="card-image">
       {/* imgs */}
@@ -28,16 +28,12 @@ function ResCards(props) {
       </p>
     </div>
     <div className="card-content">
-      <p>
+      <p className="description">
         {/* content */}
         {description}
       </p>
     </div>
-    <div className="d-flex align-items-center justify-content-between my-1 w-50 mx-auto">
-      <p className="m-0">{oTime}</p>
-      <p className="m-0">To</p>
-      <p className="m-0">{cTime}</p>
-    </div>
+    <br />
     <div className="res-info">
       <p className="m-0">Type: {type}</p>
       <p>Address: {address}</p>

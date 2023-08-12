@@ -3,6 +3,10 @@ li {
   list-style: none;
 }
 
+.logo-images{
+  height: 40px;
+  padding: 1px 10px;
+}
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -219,7 +223,7 @@ ul {
 
   .nav-links-active {
     display: flex !important;
-    height: 350px;
+    height: 200px;
     visibility: visible;
     padding-bottom: 2rem;
   }

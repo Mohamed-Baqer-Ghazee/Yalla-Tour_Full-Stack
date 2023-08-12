@@ -24,7 +24,7 @@
 
 .place .row-1 h3,
 .place .row-2 h3 {
-  font-size: 1dvw;
+  width: 90%;
 }
 
 .place .text-side {
@@ -56,6 +56,10 @@
 .place .text-side h1 {
   font-size: 3dvw;
   font-weight: 900;
+}
+
+.place .text-side p {
+  font-size: 20px;
 }
 
 @media (max-width: 991px) {

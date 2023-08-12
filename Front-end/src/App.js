@@ -25,8 +25,8 @@ function App() {
           <Route path="/Places" Component={Places} />
           <Route path="/Place/:placeId" Component={Place} />
           <Route path="/Restaurants" Component={Restaurants} />
-          <Route path="/login" Component={Login} />
-          <Route path="/register" Component={Register} />
+          {/* <Route path="/login" Component={Login} />
+          <Route path="/register" Component={Register} /> */}
           <Route path="/adminPanel" Component={Create} />
         </Routes>
       </BrowserRouter>

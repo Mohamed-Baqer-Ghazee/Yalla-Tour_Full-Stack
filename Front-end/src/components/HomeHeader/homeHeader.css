@@ -1,7 +1,7 @@
-.home-header {
+/* .home-header {
   height: 500px;
   margin-bottom: 5dvh;
-}
+} */
 
 .home-header .text-side {
   height: 100%;
@@ -26,6 +26,7 @@
 }
 
 .home-header .carousel-side {
+  margin-bottom: 10%;
   border-radius: 0.5rem;
 }
 

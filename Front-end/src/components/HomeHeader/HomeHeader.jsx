@@ -1,77 +1,66 @@
 import React from "react";
 import "./homeHeader.css";
 
+import Carousel from "../Carousel/Carousel";
+
 function HomeHeader() {
-  
+  const images = [
+    "https://upload.wikimedia.org/wikipedia/commons/d/de/The_ziggurat_at_Aqar_Quf.jpg",
+    "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/almpics/2017/04/Ziggarut.jpg/Ziggarut.jpg?h=f7822858&itok=StTB3AU1",
+    "https://www.aljazeera.net/wp-content/uploads/2019/05/14e75b5a-3549-4b7f-a036-ed954ce8d5a6.jpeg",
+    "https://upload.wikimedia.org/wikipedia/commons/5/5b/The_Al-Safafir_Market%2C_Baghdad%2C_1930s.png",
+    "https://www.ina.iq/uploads/posts/2022-08/upload_1660242118_988838775.jpeg",
+    "https://image.radionawa.com/root/root/images/72352018_1.jpg",
+    "https://4.bp.blogspot.com/-FMBeOxExlEg/VqUKFoqhgJI/AAAAAAAAA1A/ASCcpv6foxk/s1600/IMG_7712.jpg",
+    "https://www.algardenia.com/images/Bagdadyaat/Safafierr.jpg"
+
+  ]
   return (
     <div className="container-fluid home-header">
       <div className="row">
         <div className="col-12 col-md-12 col-lg-6 text-side">
           <h1>
-            Welcome to <span>Enigmatica UI</span> Experience
+            Hello There,
           </h1>
           <h3>
-            Enigmatica UI Experience™ introduces a kaleidoscope of abstract
-            shapes, pulsating colors, and enigmatic symbols, meticulously
-            crafted to confound and mystify users. Each interaction is a cryptic
-            puzzle waiting to be deciphered, as buttons vanish into thin air and
-            menus materialize from the depths of the digital cosmos.
+          Welcome to Yalla Tour, your ultimate guide to exploring the captivating beauty and rich history of Iraq! We are thrilled to introduce ourselves and share our passion for connecting travelers with the wonders that this incredible country has to offer.
           </h3>
         </div>
         <div className="col-12 col-md-12 col-lg-6 carousel-side">
-          <div
-            id="carouselExampleControls"
-            className="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  src="https://images.unsplash.com/photo-1556888335-23631cd2801a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ymxhbmt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                  className="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1661765961176-95e74df91e3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ymxhbmt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                  className="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1670106461988-039155ad1cbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJsYW5rfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                  className="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+        <Carousel
+            id="1"
+            mainImg={images[0]}
+            images={images}
+          />
+        </div>
+        <div className="col-12 col-md-12 col-lg-6 carousel-side">
+        <Carousel
+            id="2"
+            mainImg={images[0]}
+            images={images}
+          />
+        </div>
+        <div className="col-12 col-md-12 col-lg-6 text-side">
+          <h1>
+          About Us
+          </h1>
+          <h3>
+          At Yalla Tour, we believe that travel is not just about visiting new places; it's about creating unforgettable experiences that open doors to different cultures, traditions, and stories. Our mission is to facilitate your journey through Iraq, making it easier for you to discover the hidden gems and iconic landmarks that define this land of ancient civilizations.          </h3>
+        </div>
+       
+        <div className="col-12 col-md-12 col-lg-6 text-side">
+          <h1>
+          Our Vision
+          </h1>
+          <h3>
+          Our vision is simple yet powerful: to be your trusted companion in unraveling the mysteries and treasures of Iraq. We envision Yalla Tour as the go-to platform for both seasoned travelers and curious adventurers who wish to explore Iraq's diverse landscapes, delve into its history, and forge connections with its warm-hearted people.          </h3>
+        </div>
+        <div className="col-12 col-md-12 col-lg-6 carousel-side">
+        <Carousel
+            id="3"
+            mainImg={images[0]}
+            images={images}
+          />
         </div>
       </div>
     </div>

@@ -2,6 +2,8 @@ import { Link, NavLink } from "react-router-dom";
 import searchIcon from "../../assets/icons/search.svg";
 import menuIcon from "../../assets/icons/menu.svg";
 import closeIcon from "../../assets/icons/close.svg";
+import logo from "../../assets/Yalla-Tour-Logo-only.png"
+import logoText from "../../assets/Yalla-Tour-text.png"
 import "./Navbar.css";
 
 import { useState } from "react";
@@ -18,7 +20,10 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${open ? "navbar-res" : ""}`}>
       <div className="logo-container">
-        <h3 className="logo">LOGO</h3>
+        <a href="/">
+        <img src={logo} alt="logo" className="logo-images"/>
+        <img src={logoText} alt="logoText" className="logo-images"/>
+        </a>
         <button className="burger-btn" onClick={() => setOpen(!open)}>
           {open ? (
             <img src={closeIcon} alt="close-icon" />
@@ -44,11 +49,6 @@ const Navbar = () => {
               Restaurants
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/About" className={activeLink}>
-              About Us
-            </NavLink>
-          </li>
         </ul>
         <div className={`left-side ${open ? "visible" : ""}`}>
           {/* <div className={`search-bar ${active ? "active-search-bar" : ""}`}>
@@ -65,9 +65,9 @@ const Navbar = () => {
               className={`search-bar-input ${active ? "active-search" : ""}`}
             />
           </div> */}
-          <Link to="/login" className="reg-link">
+          {/* <Link to="/login" className="reg-link">
             login
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>

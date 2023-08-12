@@ -14,6 +14,7 @@ function Place(placeData) {
             {description}
           </h3>
           <br/>
+          <br />
           {oTime &&cTime&&  <div className="d-flex align-items-center justify-content-between my-1 w-50 mx-auto">
         <p className="m-0">{oTime}</p>
         <p className="m-0">To</p>

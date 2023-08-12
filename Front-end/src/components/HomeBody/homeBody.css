@@ -5,101 +5,62 @@
   margin: 5rem 0;
 }
 
-.home-body .img-container {
-  width: 100%;
-  height: 500px;
-}
-
-.home-body .row-1 .img-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-}
-
-.home-body .row-1 h1,
-.home-body .row-2 h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.home-body .row-1 h3,
-.home-body .row-2 h3 {
-  font-size: 1dvw;
-}
-
 .home-body .text-side {
-  padding-top: 2rem;
-}
-
-.home-body .row-2 .img-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.home-body .carousel-item {
-  width: 100%;
-  height: 500px;
-}
-
-.home-body .carousel-inner {
-  width: 100%;
-  height: 500px;
-  border-radius: 15px;
-}
-
-.home-body .carousel-item img {
-  object-fit: cover;
-  width: 90%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home-body .text-side h1 {
-  font-size: 3dvw;
+  font-size: 2.5dvw;
+  margin-bottom: 3dvh;
   font-weight: 900;
 }
 
+.home-body .text-side h3 {
+  font-size: 1.5dvw;
+  font-weight: 500;
+}
+
+.home-body .text-side h1 span {
+  color: var(--primary-color);
+}
+
+.home-body .carousel-side {
+  border-radius: 0.5rem;
+}
+
+.carousel-side .carousel-inner,
+.carousel-side .carousel-inner .carousel-item {
+  height: 500px;
+  background: transparent;
+  border-radius: 1rem;
+}
+
+.carousel-side .carousel-inner img {
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 991px) {
-  .home-body .row:nth-child(1) {
-    flex-direction: column-reverse;
+  .home-body {
+    height: auto;
+  }
+
+  .carousel-side .carousel-inner,
+  .carousel-side .carousel-inner .carousel-item {
+    height: 50dvw;
   }
 }
 
 @media (max-width: 768px) {
-  .home-body {
-    gap: 2rem;
-    margin: 2rem 0;
-  }
-
-  .home-body .text-side {
-    padding-bottom: 2rem;
-  }
-
-  .home-body .carousel-inner {
-    height: 50dvw;
-  }
-
-  .home-body .row-1 h1,
-  .home-body .row-2 h1 {
+  .home-body .text-side h1 {
     font-size: 2rem;
-    margin-bottom: 2rem;
   }
 
-  .home-body .row-1 h3,
-  .home-body .row-2 h3 {
+  .home-body .text-side h3 {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 }
-/* 
-@media (max-width: 500px) {
-  .home-body .row-1 h1,
-  .home-body .row-2 h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .home-body .row-1 h3,
-  .home-body .row-2 h3 {
-    font-size: 1rem;
-  }
-} */
