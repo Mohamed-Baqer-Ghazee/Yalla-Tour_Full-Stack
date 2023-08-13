@@ -24,12 +24,10 @@
 
 .place .row-1 h3,
 .place .row-2 h3 {
+  font-size: 20px;
   width: 90%;
 }
 
-.place .text-side {
-  padding-top: 2rem;
-}
 
 .place .row-2 .img-container {
   display: flex;

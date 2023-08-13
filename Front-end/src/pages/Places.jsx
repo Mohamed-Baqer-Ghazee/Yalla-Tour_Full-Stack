@@ -7,13 +7,7 @@ import axios from "axios";
 
 const Places = () => {
   const [allData, setAllData] = useState([]);
-  const [counter, setCounter] = useState(10);
-  const [show, setShow] = useState(false);
-
-  const showData = () => {
-    setCounter(allData.length - 1);
-    setShow(true);
-  };
+  
 
   useEffect(() => {
     const config = {
@@ -31,10 +25,7 @@ const Places = () => {
       <Navbar />
       <div className="container-fluid places">
         {allData.map((item, i) => {
-          if (i === counter - 1 && !show) {
-            return <ViewMore onClick={showData} key={i} />;
-          }
-          if (i < counter)
+          
             return (
               <LocationCards
                 key={i}

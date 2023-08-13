@@ -8,13 +8,17 @@ function HomeHeader() {
     "https://upload.wikimedia.org/wikipedia/commons/d/de/The_ziggurat_at_Aqar_Quf.jpg",
     "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/almpics/2017/04/Ziggarut.jpg/Ziggarut.jpg?h=f7822858&itok=StTB3AU1",
     "https://www.aljazeera.net/wp-content/uploads/2019/05/14e75b5a-3549-4b7f-a036-ed954ce8d5a6.jpeg",
+  ];
+  const images1 = [
     "https://upload.wikimedia.org/wikipedia/commons/5/5b/The_Al-Safafir_Market%2C_Baghdad%2C_1930s.png",
     "https://www.ina.iq/uploads/posts/2022-08/upload_1660242118_988838775.jpeg",
     "https://image.radionawa.com/root/root/images/72352018_1.jpg",
+  ];
+  const images2 = [
+    "https://image.radionawa.com/root/root/images/72352018_1.jpg",
     "https://4.bp.blogspot.com/-FMBeOxExlEg/VqUKFoqhgJI/AAAAAAAAA1A/ASCcpv6foxk/s1600/IMG_7712.jpg",
     "https://www.algardenia.com/images/Bagdadyaat/Safafierr.jpg"
-
-  ]
+  ];
   return (
     <div className="container-fluid home-header">
       <div className="row">
@@ -36,8 +40,8 @@ function HomeHeader() {
         <div className="col-12 col-md-12 col-lg-6 carousel-side">
         <Carousel
             id="2"
-            mainImg={images[0]}
-            images={images}
+            mainImg={images1[0]}
+            images={images1}
           />
         </div>
         <div className="col-12 col-md-12 col-lg-6 text-side">
@@ -58,8 +62,8 @@ function HomeHeader() {
         <div className="col-12 col-md-12 col-lg-6 carousel-side">
         <Carousel
             id="3"
-            mainImg={images[0]}
-            images={images}
+            mainImg={images2[0]}
+            images={images2}
           />
         </div>
       </div>
